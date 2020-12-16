@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  text-decoration: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  &--view-more {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-primary;
+  }
+}
