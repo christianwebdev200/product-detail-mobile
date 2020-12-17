@@ -1,10 +1,49 @@
 .select {
-  font: inherit;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 100;
+  background-color: $color-white;
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: $color-white-10;
+    h3 {
+      font-size: 23px;
+    }
 
-  &--color {
-    padding: 10px 12px;
-    width: 250px;
-    border-radius: 3px;
-    border: 1px solid rgba($color-black, 0.3);
+    .modal__exit {
+      font-size: 18px;
+    }
+  }
+
+  &__body {
+    padding: 0 0 20px 0;
+    ul {
+      list-style: none;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: $color-main;
+      padding: 10px 15px;
+      .color-box {
+        margin-right: 12px;
+        border-radius: 0;
+
+        @include square-size(40px);
+        border: none;
+      }
+
+      &:hover {
+        background-color: rgba($color-gray, 0.1);
+      }
+    }
   }
 }
